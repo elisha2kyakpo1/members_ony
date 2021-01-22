@@ -1,0 +1,8 @@
+<%= form_for(@post, url: posts_path) do |form| %>
+  
+    title : <%= form.text_field :title, placeholder: 'title here' %><br />    
+    
+    body: <%= form.text_area :body, placeholder: 'Write your post here' %><br />         
+    
+    submit: <%= form.submit "Submit" %><br />
+<% end %>
