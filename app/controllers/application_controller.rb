@@ -1,12 +1,14 @@
+# frozen_string_literal: true
+
 class ApplicationController < ActionController::Base
-    before_action :require_login, if: :devise_controller?
+  before_action :require_login, if: :devise_controller?
 
-    private 
+  private
 
-    def require_login
-        unless user_signed_in?
-            flash[:error] = "Log in required to access this section"
-            redirect_to new_login_url 
-        end 
-    end     
+  def require_login
+    unless user_signed_in?
+      flash[:error] = 'Log in required to access this section'
+      redirect_to new_login_url
+    end
+  end
 end
