@@ -1,7 +1,7 @@
 <div class = "posts">
 	<div class ="posts-div">
 		<p>Create a post</p>
-		<%= form_for(@post, url: posts_path) do |form| %>
+			<%= form_with(model: @post, local: true) do |form| %>
 			<p><%= form.text_field :title, placeholder: 'title here', :class => 'title' %></p> 
 
 		<p> <%= form.text_area :body, placeholder: 'Write your post here', cols: "30", rows: "10", :class => 'post' %></p>         
