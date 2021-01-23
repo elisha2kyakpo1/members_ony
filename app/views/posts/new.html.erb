@@ -4,7 +4,7 @@
 			<%= form_with(model: @post, local: true) do |form| %>
 			<p><%= form.text_field :title, placeholder: 'title here', :class => 'title' %></p> 
 
-		<p> <%= form.text_area :body, placeholder: 'Write your post here', cols: "30", rows: "10", :class => 'post' %></p>         
+		<p> <%= form.text_area :body, placeholder: 'Write your post here', cols: "50", rows: "5", :class => 'post' %></p>         
 			
 			<%= form.submit "Submit", :class => 'sub' %>
 
