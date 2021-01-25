@@ -4,7 +4,8 @@
 .div-user,
 .edit,
 .signin,
-.field {
+.field,
+.navbar {
   display: flex;
   justify-content: center;
 }
@@ -86,8 +87,13 @@ a {
   display: inline-block;
   text-decoration: none;
   background-color: #0c4a6e;
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 3px 8px;
   border: none;
-  color: #fff !important;
+	color: #fff !important;
+	margin: 0 10px;
+}
+
+.navbar {
+	justify-content: start;
 }

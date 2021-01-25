@@ -6,7 +6,7 @@
 		<h2><%= post.Title %></h2>
 		<p><%= post.Body %></p>
 		<% if user_signed_in? %>
-			<small><%= time_ago_in_words(Body.created_at) %> ago by <%= post.user.name %></small>
+			<small><%= time_ago_in_words(Body.created_at) %> ago by <%= post.user.email %></small>
 		<% end %>
 		<%= link_to 'Show', post %>
 		<%= link_to 'Edit', edit_post_path(post) %>
