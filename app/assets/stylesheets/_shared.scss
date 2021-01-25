@@ -4,9 +4,13 @@
 .div-user,
 .edit,
 .signin,
-.posts {
+.field {
   display: flex;
   justify-content: center;
+}
+
+.field {
+	flex-direction: column;
 }
 
 .inner-div {
@@ -60,7 +64,7 @@ h2 { color: forestgreen; }
 }
 
 .title,
-.post {
+.body  {
 	border-radius: 5px;
 	font-size: 18px;
 	padding: 5px;
@@ -72,11 +76,8 @@ h2 { color: forestgreen; }
   background-color: #ffbaba;
 }
 
-.div-user {
-  background-color: grey;
-}
-
-.para {
+.para,
+.label {
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
 }

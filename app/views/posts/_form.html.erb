@@ -12,16 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :Title %>
-    <%= form.text_field :Title %>
+    <%= form.label :Title, :class => 'label' %>
+    <%= form.text_field :Title, :class => 'title' %>
   </div>
 
   <div class="field">
-    <%= form.label :Body %>
-    <%= form.text_area :Body %>
+    <%= form.label :Body , :class => 'label'%>
+    <%= form.text_area :Body , :class => 'body'%>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit 'Submit', :class => 'sub' %>
   </div>
 <% end %>
