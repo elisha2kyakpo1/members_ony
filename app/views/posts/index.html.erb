@@ -9,7 +9,13 @@
       <p><%= post.Body %></p>
       <small><%= time_ago_in_words(post.created_at) %> ago </small>
       <% if user_signed_in? %>
+<<<<<<< HEAD
       <small>by <%= post.user.email %></small>
+=======
+      <small><%= post.user.email %></small>
+      <% else %>
+      <small>Anonymous</small>
+>>>>>>> 4a49140174e0b7af95e7b888254129470a9cec36
       <% end %>
   <hr>
     <% end %> 
