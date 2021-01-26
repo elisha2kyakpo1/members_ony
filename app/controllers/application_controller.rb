@@ -4,9 +4,9 @@ class ApplicationController < ActionController::Base
   private
 
   def require_login
-    unless user_signed_in?
-      flash[:error] = 'Log in required to access this section'
-      redirect_to new_user_password_path
-    end
+    return unless user_signed_in?
+
+    flash[:error] = 'Log in required to access this section'
+    redirect_to new_user_password_path
   end
 end
