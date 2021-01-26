@@ -1,15 +1,15 @@
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
-  
+
 <h1>Posts</h1>
 <div class ="post_div">
   <div>
     <% @posts.each do |post| %>
       <h2><%= post.Title %></h2>
       <p><%= post.Body %></p>
-      <small><%= time_ago_in_words(post.created_at) %> ago by</small>
+      <small><%= time_ago_in_words(post.created_at) %> ago </small>
       <% if user_signed_in? %>
-      <small><%= post.user.email %></small>
+      <small>by <%= post.user.email %></small>
       <% end %>
   <hr>
     <% end %> 
