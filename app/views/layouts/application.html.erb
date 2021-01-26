@@ -15,12 +15,18 @@
 				
 				<p><%= link_to 'Posts', posts_path %></p>
 				<p><%= link_to 'New Post', new_post_url %></p>
+			<%= form_tag search_posts_path, method: :get do %>
+				<div class = 'search'>
+					<p><%= text_field_tag :search, nil, placeholder: 'Search...', class: 'search' %></p>
+					<p><%= submit_tag 'search', class: 'sub_search' %></p>
+				</div>
+			<% end %>
 			<% if user_signed_in?%>
-				Welcome <%= current_user.email %>
-				<%= link_to 'Log Out', destroy_user_session_path, method: :delete %>
+				<h4>Welcome <%= current_user.email %></h4>
+				<p class ="para_log_out"><%= link_to 'Log Out', destroy_user_session_path, method: :delete %></p>
 				<% else %>
-					<%= link_to 'Sign In', new_user_session_path %>
-					<%= link_to 'Sign Up', new_user_registration_path %>
+					<p class ="para_sign_in"><%= link_to 'Sign In', new_user_session_path %></p>
+					<p class ="para_sign_up"><%= link_to 'Sign Up', new_user_registration_path %></p>
 			<% end %>
 		</nav>
 	</header>

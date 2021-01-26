@@ -3,21 +3,19 @@
 
 <h1>Posts</h1>
 <div class ="post_div">
-  <div>
+  <div class ="post_data">
     <% @posts.each do |post| %>
-      <h2><%= post.Title %></h2>
-      <p><%= post.Body %></p>
-      <small><%= time_ago_in_words(post.created_at) %> ago </small>
-      <% if user_signed_in? %>
-<<<<<<< HEAD
-      <small>by <%= post.user.email %></small>
-=======
-      <small><%= post.user.email %></small>
-      <% else %>
-      <small>Anonymous</small>
->>>>>>> 4a49140174e0b7af95e7b888254129470a9cec36
-      <% end %>
-  <hr>
+      <div>
+        <h2><%= post.Title %></h2>
+        <p><%= post.Body %></p>
+        <small><%= time_ago_in_words(post.created_at) %> ago </small>
+        <% if user_signed_in? %>
+        <small><%= post.user.email %></small>
+        <% else %>
+        <small>Anonymous</small>
+        <% end %>
+        <hr>
+      </div>
     <% end %> 
   </div>
 </div>

@@ -73,6 +73,21 @@ h2 { color: forestgreen; }
   font-size: 18px;
 }
 
+.search {
+  margin-left: auto;
+  padding: 3px;
+}
+
+.sub_search {
+  font-size: 18px;
+  background-color: forestgreen;
+  border: none;
+  padding: 3px 5px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 0 3px 3px 0;
+}
+
 .title,
 .body {
   border-radius: 5px;
@@ -99,14 +114,17 @@ h2 { color: forestgreen; }
 a {
   display: inline-block;
   text-decoration: none;
-  background-color: #0c4a6e;
   border-radius: 3px;
   padding: 3px 8px;
   border: none;
-  color: #fff !important;
+  color: #075985 !important;
   margin: 0 10px;
 }
 
-.navbar {
-  justify-content: start;
+.para_sign_in {
+  margin-left: auto;
+}
+
+h4 {
+  color: #fff;
 }

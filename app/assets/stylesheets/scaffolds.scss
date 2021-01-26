@@ -4,14 +4,22 @@ body {
   margin: 33px;
 }
 
+.search {
+  display: flex;
+  justify-content: center;
+}
+
 body,
 p,
 ol,
 ul,
 td {
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
   line-height: 18px;
+}
+
+.para_log_out {
+  margin-left: auto;
 }
 
 pre {
@@ -29,7 +37,7 @@ a:visited {
 }
 
 a:hover {
-  color: #fff;
+  color: #fff !important;
   background-color: #000;
 }
 

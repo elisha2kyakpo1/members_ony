@@ -1,0 +1,5 @@
+<% @searches.each do |search| %>
+  <p><%= search.Title %></p>
+  <p><%= search.Body %></p>
+<% end %>
+<%= link_to 'Back', posts_path %>
