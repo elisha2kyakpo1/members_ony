@@ -1,16 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Posts</h1>
-<div>
-  <% @posts.each do |post| %>
-    <h2><%= post.Title %></h2>
-    <p><%= post.Body %></p>
-     <small><%= time_ago_in_words(post.created_at) %> ago by</small>
-    <% if user_signed_in? %>
-    <small><%= post.user.email %></small>
-    <% end %>
-
-  <% end %> 
+<div class ="post_div">
+  <div>
+    <% @posts.each do |post| %>
+      <h2><%= post.Title %></h2>
+      <p><%= post.Body %></p>
+      <small><%= time_ago_in_words(post.created_at) %> ago by</small>
+      <% if user_signed_in? %>
+      <small><%= post.user.email %></small>
+      <% end %>
+  <hr>
+    <% end %> 
+  </div>
 </div>
 <br>
 <%= link_to 'New Post', new_post_path %>

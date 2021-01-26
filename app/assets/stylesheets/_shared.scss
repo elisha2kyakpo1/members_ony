@@ -4,17 +4,21 @@
 .div-user,
 .edit,
 .signin,
-.field,
-.navbar {
+.navbar,
+.field {
   display: flex;
   justify-content: center;
 }
 
-.field {
-  flex-direction: column;
+.remenber {
+  display: inline;
 }
 
-.inner-div {
+.space {
+  margin: 15px 0;
+}
+
+.field {
   flex-direction: column;
   border-radius: 5px;
   padding: 10px 20px;
@@ -22,7 +26,7 @@
   margin-top: 25px;
 }
 
-.posts-div {
+.post_div {
   border-radius: 5px;
   padding: 10px 20px;
   box-shadow: 0 0 10px lightgray;
