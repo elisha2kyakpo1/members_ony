@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   before_action :set_post, only: %i[show edit update destroy]
+  before_action :require_login, only: %i[create update]
 
   # GET /posts
   # GET /posts.json
