@@ -24,6 +24,7 @@
   padding: 10px 20px;
   box-shadow: 0 0 10px lightgray;
   margin-top: 25px;
+  width: 50%;
 }
 
 small {
@@ -83,6 +84,10 @@ h2 { color: forestgreen; }
 .alert {
   color: #d8000c;
   background-color: #ffbaba;
+}
+
+.notice {
+  color: #16a058;
 }
 
 .para,
