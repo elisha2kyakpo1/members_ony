@@ -1,12 +1,12 @@
 <div class ="posts-div">
-	<div>
-		<h1>Create Post</h1>
-		<% if !user_signed_in? %>
-		<p>You have to Sign In to create a post</p>
-		<% end %>
-		<% if user_signed_in? %>
-			<%= render 'form', post: @post %>
-			<%= link_to 'Back', posts_path %>
-		<% end %>
-	</div>
+  <div>
+    <h1>Create Post</h1>
+    <% if !user_signed_in? %>
+    <p>You have to Sign In to create a post</p>
+    <% end %>
+    <% if user_signed_in? %>
+      <%= render 'form', post: @post %>
+      <%= link_to 'Back', posts_path %>
+    <% end %>
+  </div>
 </div>

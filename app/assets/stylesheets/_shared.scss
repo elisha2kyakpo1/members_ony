@@ -11,7 +11,7 @@
 }
 
 .field {
-	flex-direction: column;
+  flex-direction: column;
 }
 
 .inner-div {
@@ -23,17 +23,17 @@
 }
 
 .posts-div {
-	border-radius: 5px;
+  border-radius: 5px;
   padding: 10px 20px;
   box-shadow: 0 0 10px lightgray;
-	margin-top: 25px;
-	width: 50%;
+  margin-top: 25px;
+  width: 50%;
 }
 
 .posts-div p {
-	font-size: 20px;
-	font-weight: bold;
-	font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .submit,
@@ -50,7 +50,7 @@
 }
 
 .sub {
-	padding: 5px 10px;
+  padding: 5px 10px;
 }
 
 h2 { color: forestgreen; }
@@ -66,10 +66,10 @@ h2 { color: forestgreen; }
 
 .title,
 .body  {
-	border-radius: 5px;
-	font-size: 18px;
-	padding: 5px;
-	outline: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 5px;
+  outline: none;
 }
 
 .alert {
@@ -90,10 +90,10 @@ a {
   border-radius: 3px;
   padding: 3px 8px;
   border: none;
-	color: #fff !important;
-	margin: 0 10px;
+  color: #fff !important;
+  margin: 0 10px;
 }
 
 .navbar {
-	justify-content: start;
+  justify-content: start;
 }

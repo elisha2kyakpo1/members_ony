@@ -6,7 +6,7 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get index" do
-    get posts_url
+    get post_url
     assert_response :success
   end
 
@@ -17,7 +17,7 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create post" do
     assert_difference('Post.count') do
-      post posts_url, params: { post: { Body: @post.Body, Title: @post.Title } }
+      post post_url, params: { post: { Body: @post.Body, Title: @post.Title } }
     end
 
     assert_redirected_to post_url(Post.last)
@@ -43,6 +43,6 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
       delete post_url(@post)
     end
 
-    assert_redirected_to posts_url
+    assert_redirected_to post_url
   end
 end

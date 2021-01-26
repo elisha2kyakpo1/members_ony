@@ -6,12 +6,12 @@ class PostsTest < ApplicationSystemTestCase
   end
 
   test "visiting the index" do
-    visit posts_url
+    visit post_url
     assert_selector "h1", text: "Posts"
   end
 
   test "creating a Post" do
-    visit posts_url
+    visit post_url
     click_on "New Post"
 
     fill_in "Body", with: @post.Body
@@ -23,7 +23,7 @@ class PostsTest < ApplicationSystemTestCase
   end
 
   test "updating a Post" do
-    visit posts_url
+    visit post_url
     click_on "Edit", match: :first
 
     fill_in "Body", with: @post.Body
@@ -35,7 +35,7 @@ class PostsTest < ApplicationSystemTestCase
   end
 
   test "destroying a Post" do
-    visit posts_url
+    visit post_url
     page.accept_confirm do
       click_on "Destroy", match: :first
     end

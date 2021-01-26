@@ -2,16 +2,15 @@
 
 <h1>Posts</h1>
 <div>
-	<% @posts.each do |post| %>
-		<h2><%= post.Title %></h2>
-		<p><%= post.Body %></p>
-		<% if user_signed_in? %>
-			<small><%= time_ago_in_words(Body.created_at) %> ago by <%= post.user.email %></small>
-		<% end %>
-		<%= link_to 'Show', post %>
-		<%= link_to 'Edit', edit_post_path(post) %>
-		<%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %>
-	<% end %> 
+  <% @posts.each do |post| %>
+    <h2><%= post.Title %></h2>
+    <p><%= post.Body %></p>
+     <small><%= time_ago_in_words(post.created_at) %> ago by</small>
+    <% if user_signed_in? %>
+    <small><%= post.user.email %></small>
+    <% end %>
+
+  <% end %> 
 </div>
 <br>
 <%= link_to 'New Post', new_post_path %>
