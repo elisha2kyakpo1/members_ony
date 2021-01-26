@@ -10,6 +10,8 @@
       <small><%= time_ago_in_words(post.created_at) %> ago by</small>
       <% if user_signed_in? %>
       <small><%= post.user.email %></small>
+      <% else %>
+      <small>Anonymous</small>
       <% end %>
   <hr>
     <% end %> 
